@@ -1,0 +1,27 @@
+{
+  "name": "tools-for-fools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production;node server.js",
+    "dev": "NODE_ENV=development;nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Solopie/tools-for-fools.git"
+  },
+  "author": "Jesse Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Solopie/tools-for-fools/issues"
+  },
+  "homepage": "https://github.com/Solopie/tools-for-fools#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
