@@ -7,3 +7,35 @@
         column-count: 5;
     }
 }
+
+.top-buffer-1 {
+    margin-top: 30px;
+}
+
+.top-buffer-2 {
+    margin-top: 50px;
+}
+
+.top-buffer-5 {
+    margin-top: 110px;
+}
+
+.round-button {
+    width: 25%;
+}
+
+.round-button-circle {
+    width: 10%;
+    height: 0;
+    padding-bottom: 8%;
+    border-radius: 50%;
+    border: 10px solid #cfdcec;
+    overflow: hidden;
+
+    background: #7c7c7c;
+    box-shadow: 0 0 3px rgb(179, 179, 179);
+}
+
+.round-button-circle:hover {
+    background: #525252;
+}

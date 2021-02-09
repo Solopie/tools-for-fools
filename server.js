@@ -13,7 +13,7 @@ app.get("/", (req,res) => {
 });
 
 app.get("/counter", (req,res) => {
-    res.render("counter", { title: "Toolsfor Fools" })
+    res.render("counter", { title: "Tools for Fools", tool_name: "Counter" })
 })
 
 app.listen(config.PORT, () => {
