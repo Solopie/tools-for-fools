@@ -1,17 +1,18 @@
 extends tool 
 
 block tool 
-    .row
-        .card
-            .card-body
-                p Countdown
-                input#input
-                p
-                button#start.btn Start
-                p 
-                button#reset.btn Reset
-                p
-                .card
-                    .card-body
-                        p#display Countdown: 
+    .row.justify-content-md-center
+        .col.col-md-auto
+            .card
+                .card-body
+                    p Countdown
+                    input#input
+                    p
+                    button#start.btn Start
+                    p 
+                    button#reset.btn Reset
+                    p
+                    .card
+                        .card-body
+                            p#display Countdown: 
     script(src="/js/countdown.js")
