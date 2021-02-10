@@ -16,6 +16,10 @@ app.get("/counter", (req,res) => {
     res.render("counter", { title: "Tools for Fools", tool_name: "Counter" })
 })
 
+app.get("/countdown", (req,res) => {
+    res.render("countdown", { title: "Toolsfor Fools" })
+})
+
 app.listen(config.PORT, () => {
     console.log(`Web server is running at port ${config.PORT}`);
 });
