@@ -4,10 +4,13 @@ let start = document.getElementById("start")
 let reset = document.getElementById("reset")
 let display = document.getElementById("display")
 
-var initialDate, initialTime, initialInput
+var initialDate, initialTime, initialInput, timer
 
 
 start.onclick = () => {
+    if(timer) {
+        clearInterval(timer);
+    }
     // grab time when user pressed start
     initialDate = new Date()
     initialTime = Math.floor(initialDate.getTime()/1000)
