@@ -17,7 +17,7 @@ app.get("/counter", (req,res) => {
 })
 
 app.get("/countdown", (req,res) => {
-    res.render("countdown", { title: "Toolsfor Fools" })
+    res.render("countdown", { title: "Tools for Fools", tool_name: "Countdown" })
 })
 
 app.listen(config.PORT, () => {
