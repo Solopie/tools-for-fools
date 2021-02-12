@@ -20,6 +20,22 @@ app.get("/countdown", (req,res) => {
     res.render("countdown", { title: "Tools for Fools", tool_name: "Countdown" })
 })
 
+app.get("/poll", (req,res) => {
+    res.render("development", { title: "Tools for Fools", tool_name: "Anonymous Poll" })
+})
+
+app.get("/stopwatch", (req,res) => {
+    res.render("development", { title: "Tools for Fools", tool_name: "Stopwatch" })
+})
+
+app.get("/scoreboard", (req,res) => {
+    res.render("development", { title: "Tools for Fools", tool_name: "Scoreboard" })
+})
+
+app.get("/sketch", (req,res) => {
+    res.render("development", { title: "Tools for Fools", tool_name: "Sketch Sharing" })
+})
+
 app.listen(config.PORT, () => {
     console.log(`Web server is running at port ${config.PORT}`);
 });
