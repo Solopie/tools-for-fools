@@ -25,7 +25,7 @@ app.get("/poll", (req,res) => {
 })
 
 app.get("/stopwatch", (req,res) => {
-    res.render("development", { title: "Tools for Fools", tool_name: "Stopwatch" })
+    res.render("stopwatch", { title: "Tools for Fools", tool_name: "Stopwatch" })
 })
 
 app.get("/scoreboard", (req,res) => {

@@ -1,0 +1,18 @@
+extends tool
+
+block tool 
+    .row.justify-content-md-center
+        .col.col-md-auto
+            .card
+                .card-body
+                    p Countdown
+                    button#start.btn Start
+                    p 
+                    button#pause.btn Pause
+                    p 
+                    button#reset.btn Reset
+                    p
+                    .card
+                        .card-body
+                            p#display Time: 0
+    script(src="/js/stopwatch.js")
