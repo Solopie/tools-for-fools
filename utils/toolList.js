@@ -22,9 +22,9 @@ const toolList = [{
 {
     name: "Stopwatch",
     route: "stopwatch",
-    template: "development",
+    template: "stopwatch",
     description: "Record amount of time to do something",
-    active: false,
+    active: true,
 },
 {
     name: "Scoreboard",
