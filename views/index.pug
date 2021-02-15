@@ -8,49 +8,17 @@ block content
         .row.top-buffer-1
             .col-md-12.text-center
                 .card-columns
-                    .card
-                        .card-body
-                            a(href="/counter")
-                                h5.card-title Counter
-                            p.card-text Simple tool to assist with counting
-                            p.card-text
-                                small.text-muted Active
-
-                    .card
-                        .card-body
-                            a(href="/stopwatch")
-                                h5.card-title Stopwatch
-                            p.card-text  Record amount of time to do something
-                            p.card-text
-                                small.text-muted In Development
-                    .card
-                        .card-body
-                            a(href="/countdown")
-                                h5.card-title Countdown
-                            p.card-text Timer that counts down
-                            p.card-text
-                                small.text-muted Active
-                    .card
-                        .card-body
-                            a(href="/scoreboard")
-                                h5.card-title Scoreboard
-                            p.card-text Track the score for sport or game
-                            p.card-text
-                                small.text-muted In Development
-                    .card
-                        .card-body
-                            a(href="/poll")
-                                h5.card-title Anonymous Poll
-                            p.card-text Create a poll to vote anonymously to resolve a decision
-                            p.card-text
-                                small.text-muted In Development
-                    .card
-                        .card-body
-                            a(href="/sketch")
-                                h5.card-title Sketch Sharing
-                            p.card-text Create a sketch and share with your friends
-                            p.card-text
-                                small.text-muted In Development
+                    - for (var x = 0; x < toolList.length ;x++)
+                      .card
+                          .card-body
+                              a(href="/tools/" + toolList[x].route)
+                                  h5.card-title= toolList[x].name 
+                              p.card-text= toolList[x].description
+                              p.card-text
+                                - if (toolList[x].active)
+                                  small.text-muted Active
+                                - else
+                                  small.text-muted In Development
         .row
             .col-md-12.text-center
                 p This site has been visited: #{count} times
