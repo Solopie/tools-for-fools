@@ -18,7 +18,7 @@ for(const tool of toolsList) {
 
 // Manually assign listener for specific tools
 tools.get("/chatroom", (req,res) => {
-    res.render("chatroom", { title: "Chat Room - Tools for Fools", tool_name: "Chat Room", messages: ["Test Message", "Another test message"]})
+    res.render("chatroom", { title: "Chat Room - Tools for Fools", tool_name: "Chat Room", messages: ["Welcome to the chatroom!"]})
 })
 
 
