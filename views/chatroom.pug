@@ -1,0 +1,18 @@
+extends tool
+
+block tool 
+    .row
+        .col.col-md-12
+            ul#messages.list-group
+                each message in messages
+                    li.list-group-item= message 
+    .row.justify-content-md-center.top-buffer-2
+        .col.col-md-auto
+            form#form(action="")
+                .input-group
+                    input#input.form-control(placeholder="Message here")
+                    .input-group-append
+                        button.btn.btn-outline-secondary(type="submit") Send
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/chatroom.js")
+

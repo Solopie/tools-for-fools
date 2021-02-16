@@ -1,3 +1,5 @@
+/* Home page cards */
+
 .card-columns {
     @include media-breakpoint-only(lg) {
         column-count: 4;
@@ -7,6 +9,8 @@
         column-count: 5;
     }
 }
+
+/* Spacing rows */
 
 .top-buffer-1 {
     margin-top: 30px;
@@ -19,6 +23,8 @@
 .top-buffer-5 {
     margin-top: 110px;
 }
+
+/* Counter Button */
 
 .round-button {
     width: 25%;
@@ -38,4 +44,10 @@
 
 .round-button-circle:hover {
     background: #525252;
+}
+
+/* Chatroom */
+
+#messages>li:nth-child(odd) {
+    background: #efefef;
 }

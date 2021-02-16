@@ -39,6 +39,13 @@ const toolList = [{
     template: "development",
     description: "Create a sketch and share with your friends",
     active: false
+},
+{
+    name: "Chat Room",
+    route: "chatroom",
+    template: "chatroom",
+    description: "An online chat room to talk with people",
+    active: false
 }
 ]
 
